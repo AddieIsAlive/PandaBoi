@@ -2,7 +2,7 @@ import DiscordJS, { CommandInteraction, Constants, Intents, MessageEmbed, Messag
 import WOKCommands from 'wokcommands'
 import path from 'path'
 import dotenv from 'dotenv'
-dotenv.config()
+//dotenv.config()
 
 const client = new DiscordJS.Client({
     intents: [
@@ -157,4 +157,4 @@ client.on('messageCreate', (message) => {
     }
 })
 
-client.login(process.env.TOKEN)
+client.login(process.env.DJS_TOKEN)
